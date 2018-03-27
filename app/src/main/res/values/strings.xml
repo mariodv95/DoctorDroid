@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DoctorDroid</string>
+    <string name="info_button">info_button</string>
 </resources>

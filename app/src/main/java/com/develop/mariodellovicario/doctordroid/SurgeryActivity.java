@@ -22,7 +22,9 @@ public class SurgeryActivity extends AppCompatActivity {
     ExpandableListView expListView;
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
-    Button tabBtn;
+    Button infContBtn;
+    Button oppPerBtn;
+    Button oppSubBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,14 +56,36 @@ public class SurgeryActivity extends AppCompatActivity {
             }
         });
 
-        tabBtn = (Button) findViewById(R.id.tabButton);
+        infContBtn = (Button) findViewById(R.id.btnInfCont);
 
-        tabBtn.setOnClickListener(new View.OnClickListener(){
+        infContBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             //On click function
             public void onClick(View view) {
                 //thigs to do on button press...example toast:
-                Toast.makeText(getApplicationContext(), "tabelle", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "tabelle1", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        oppPerBtn = (Button) findViewById(R.id.btnOppPer);
+
+        oppPerBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            //On click function
+            public void onClick(View view) {
+                //thigs to do on button press...example toast:
+                Toast.makeText(getApplicationContext(), "tabelle2", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        oppSubBtn = (Button) findViewById(R.id.btnOppSub);
+
+        oppSubBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            //On click function
+            public void onClick(View view) {
+                //thigs to do on button press...example toast:
+                Toast.makeText(getApplicationContext(), "tabelle3", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -116,50 +140,68 @@ public class SurgeryActivity extends AppCompatActivity {
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("Lista Interventi");
-        /*listDataHeader.add("Now Showing");
-        listDataHeader.add("Coming Soon..");*/
+        listDataHeader.add("Interventi di Chirurgia Generale");
+        listDataHeader.add("Interventi di Ortopedia");
+        listDataHeader.add("Interventi di Oculistica");
+        listDataHeader.add("Interventi di Radiologia");
+        listDataHeader.add("Interventi di Chirurgia Toracica");
 
         // Adding child data
-        List<String> listaInterventi = new ArrayList<String>();
-        listaInterventi.add("Intervento 1");
-        listaInterventi.add("Intervento 2");
-        listaInterventi.add("Intervento 3");
-        listaInterventi.add("Intervento 4");
-        listaInterventi.add("Intervento 5");
-        listaInterventi.add("Intervento 6");
-        listaInterventi.add("Intervento 7");
-        listaInterventi.add("Intervento 8");
-        listaInterventi.add("Intervento 9");
-        listaInterventi.add("Intervento 10");
-        listaInterventi.add("Intervento 11");
-        listaInterventi.add("Intervento 12");
-        listaInterventi.add("Intervento 13");
-        listaInterventi.add("Intervento 14");
-        listaInterventi.add("Intervento 15");
-        listaInterventi.add("Intervento 16");
-        listaInterventi.add("Intervento 17");
-        listaInterventi.add("Intervento 18");
-        listaInterventi.add("Intervento 19");
+        List<String> InterventiGen = new ArrayList<String>();
+        InterventiGen.add("Intervento 1");
+        InterventiGen.add("Intervento 2");
+        InterventiGen.add("Intervento 3");
+        InterventiGen.add("Intervento 4");
+        InterventiGen.add("Intervento 5");
+        InterventiGen.add("Intervento 6");
+        InterventiGen.add("Intervento 7");
+        InterventiGen.add("Intervento 8");
+        InterventiGen.add("Intervento 9");
+        InterventiGen.add("Intervento 10");
+        InterventiGen.add("Intervento 11");
+        InterventiGen.add("Intervento 12");
+        InterventiGen.add("Intervento 13");
+        InterventiGen.add("Intervento 14");
+        InterventiGen.add("Intervento 15");
+        InterventiGen.add("Intervento 16");
+        InterventiGen.add("Intervento 17");
+        InterventiGen.add("Intervento 18");
+        InterventiGen.add("Intervento 19");
 
 
-        /*List<String> nowShowing = new ArrayList<String>();
-        nowShowing.add("The Conjuring");
-        nowShowing.add("Despicable Me 2");
-        nowShowing.add("Turbo");
-        nowShowing.add("Grown Ups 2");
-        nowShowing.add("Red 2");
-        nowShowing.add("The Wolverine");
+        List<String> InterventiOrt = new ArrayList<String>();
+        InterventiOrt.add("The Conjuring");
+        InterventiOrt.add("Despicable Me 2");
+        InterventiOrt.add("Turbo");
+        InterventiOrt.add("Grown Ups 2");
+        InterventiOrt.add("Red 2");
+        InterventiOrt.add("The Wolverine");
 
-        List<String> comingSoon = new ArrayList<String>();
-        comingSoon.add("2 Guns");
-        comingSoon.add("The Smurfs 2");
-        comingSoon.add("The Spectacular Now");
-        comingSoon.add("The Canyons");
-        comingSoon.add("Europa Report");*/
+        List<String> InterventiOcul = new ArrayList<String>();
+        InterventiOcul.add("2 Guns");
+        InterventiOcul.add("The Smurfs 2");
+        InterventiOcul.add("The Spectacular Now");
+        InterventiOcul.add("The Canyons");
+        InterventiOcul.add("Europa Report");
 
-        listDataChild.put(listDataHeader.get(0), listaInterventi); // Header, Child data
-        /*listDataChild.put(listDataHeader.get(1), nowShowing);
-        listDataChild.put(listDataHeader.get(2), comingSoon);*/
+        List<String> InterventiRad = new ArrayList<String>();
+        InterventiRad.add("2 Guns");
+        InterventiRad.add("The Smurfs 2");
+        InterventiRad.add("The Spectacular Now");
+        InterventiRad.add("The Canyons");
+        InterventiRad.add("Europa Report");
+
+        List<String> InterventiTor = new ArrayList<String>();
+        InterventiTor.add("2 Guns");
+        InterventiTor.add("The Smurfs 2");
+        InterventiTor.add("The Spectacular Now");
+        InterventiTor.add("The Canyons");
+        InterventiTor.add("Europa Report");
+
+        listDataChild.put(listDataHeader.get(0), InterventiGen); // Header, Child data
+        listDataChild.put(listDataHeader.get(1), InterventiOrt);
+        listDataChild.put(listDataHeader.get(2), InterventiOcul);
+        listDataChild.put(listDataHeader.get(3), InterventiRad);
+        listDataChild.put(listDataHeader.get(4), InterventiTor);
     }
 }

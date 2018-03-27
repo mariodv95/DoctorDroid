@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +10,7 @@
     tools:context="com.develop.mariodellovicario.doctordroid.SurgeryActivity">
 
     <LinearLayout
+        android:id="@+id/LLTitleHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -17,7 +20,7 @@
         <TextView
             android:id="@+id/welcomeTxt"
             android:layout_width="match_parent"
-            android:layout_height="76dp"
+            android:layout_height="62dp"
             android:gravity="center_vertical|center_horizontal"
             android:text="Benvenuto in DoctorDroid"
             android:textColorLink="@android:color/background_dark"
@@ -29,22 +32,22 @@
         <TextView
             android:id="@+id/chooseSurgTxt"
             android:layout_width="match_parent"
-            android:layout_height="99dp"
+            android:layout_height="54dp"
             android:gravity="center_vertical|center_horizontal"
             android:text="Seleziona il tipo di intervento!"
             android:textColorLink="@android:color/background_dark"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="104dp" />
 
         <LinearLayout
+            android:id="@+id/LLListHome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="241dp"
             android:background="@color/backgroundSoft"
             android:gravity="center_vertical|center_horizontal|center"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="56dp"
             tools:layout_editor_absoluteY="159dp">
 
             <ExpandableListView
@@ -56,34 +59,57 @@
 
         </LinearLayout>
 
-        <android.support.constraint.ConstraintLayout
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLbutHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp">
+
+        <Button
+            android:id="@+id/btnInfCont"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Farmaci ad Infusione Continua"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="511dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="bottom"
-                android:orientation="vertical"
-                android:paddingBottom="@android:dimen/app_icon_size"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp">
+        <Button
+            android:id="@+id/btnOppPer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Oppiacei Per Via Epiturale"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="511dp" />
 
-                <Button
-                    android:id="@+id/tabButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/mybutton"
-                    android:gravity="center_vertical|center_horizontal|center"
-                    android:text="Mostra le tabelle ..."
-                    android:textColor="@android:color/background_dark"
-                    android:textSize="18sp"
-                    android:textStyle="normal|bold"
-                    tools:layout_editor_absoluteY="511dp" />
-            </LinearLayout>
-
-        </android.support.constraint.ConstraintLayout>
-
+        <Button
+            android:id="@+id/btnOppSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Oppiacei per via subaracnidea"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="511dp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
