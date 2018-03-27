@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.develop.mariodellovicario.doctordroid.SurgeryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:id="@+id/welcomeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Benvenuto in DoctorDroid"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <TextView
+            android:id="@+id/chooseSurgTxt"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Seleziona il tipo di intervento!"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="104dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundSoft"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="159dp">
+
+            <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ExpandableListView>
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="@android:dimen/app_icon_size"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <Button
+                    android:id="@+id/tabButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="Mostra le tabelle ..."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    tools:layout_editor_absoluteY="511dp" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
