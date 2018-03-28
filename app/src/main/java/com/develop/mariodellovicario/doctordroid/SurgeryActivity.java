@@ -326,33 +326,80 @@ public class SurgeryActivity extends AppCompatActivity {
 
 
         List<String> InterventiOrt = new ArrayList<String>();
-        InterventiOrt.add("The Conjuring");
-        InterventiOrt.add("Despicable Me 2");
-        InterventiOrt.add("Turbo");
-        InterventiOrt.add("Grown Ups 2");
-        InterventiOrt.add("Red 2");
-        InterventiOrt.add("The Wolverine");
+        InterventiOrt.add("Alluce valgo");
+        InterventiOrt.add("Amputazione di coscia");
+        InterventiOrt.add("Amputazione di gamba");
+        InterventiOrt.add("Amputazione di piede");
+        InterventiOrt.add("Artroprotesi di anca");
+        InterventiOrt.add("Artroscopia di spalla");
+        InterventiOrt.add("Artroscopia diagnostica del ginocchio");
+        InterventiOrt.add("Borsiti");
+        InterventiOrt.add("Chirurgia della mano");
+        InterventiOrt.add("Chirurgia diagnostica del ginocchio");
+        InterventiOrt.add("Cisti tendinea (asportazione");
+        InterventiOrt.add("Conflitto acromion-claveare");
+        InterventiOrt.add("Cuffia dei rotatori");
+        InterventiOrt.add("Dito a martello");
+        InterventiOrt.add("Dito a scatto");
+        InterventiOrt.add("Dupuytren");
+        InterventiOrt.add("Endoprotesi di anca");
+        InterventiOrt.add("Fasciotomia decompressiva arto inferior");
+        InterventiOrt.add("Fissatori esterni arti superiori");
+        InterventiOrt.add("Fissatori esterni coscia");
+        InterventiOrt.add("Fissatori esterni di anca o di bacino");
+        InterventiOrt.add("Frattura del piatto tibiale");
+        InterventiOrt.add("Frattura di clavicola");
+        InterventiOrt.add("Frattura di collo femore");
+        InterventiOrt.add("Frattura di femore distale");
+        InterventiOrt.add("Frattura di femore prossimale");
+        InterventiOrt.add("Frattura di omero");
+        InterventiOrt.add("Frattura di omero e gomito");
+        InterventiOrt.add("Frattura di polso");
+        InterventiOrt.add("Frattura di tibia e perone");
+        InterventiOrt.add("Frattura metatarso");
+        InterventiOrt.add("Frattura trimalleolare");
+        InterventiOrt.add("Lussazione di anca");
+        InterventiOrt.add("Lussazione di spalla");
+        InterventiOrt.add("Meniscectomia");
+        InterventiOrt.add("Piede equino varo");
+        InterventiOrt.add("Protesi di anca");
+        InterventiOrt.add("Protesi di ginocchio");
+        InterventiOrt.add("Protesi di spalla");
+        InterventiOrt.add("Ricostruzione di legamento crociato");
+        InterventiOrt.add("Riduzione di fratture a cielo chiuso");
+        InterventiOrt.add("Rimozione mezzi di sintesi");
+        InterventiOrt.add("Suture tendinee");
+        InterventiOrt.add("Tunnel carpale (decompressione nervosa)");
+
+
 
         List<String> InterventiOcul = new ArrayList<String>();
-        InterventiOcul.add("2 Guns");
-        InterventiOcul.add("The Smurfs 2");
-        InterventiOcul.add("The Spectacular Now");
-        InterventiOcul.add("The Canyons");
-        InterventiOcul.add("Europa Report");
+        InterventiOcul.add("Cataratta ");
+        InterventiOcul.add("Chirurgia del glaucoma");
+        InterventiOcul.add("Chirurgia della congiuntiva");
+        InterventiOcul.add("Chirurgia delle palpebre");
+        InterventiOcul.add("Chirurgia orbitaria");
+        InterventiOcul.add("Chirurgia vitroretinica");
+        InterventiOcul.add("Enucleazione o eviscerazione oculare");
+        InterventiOcul.add("Interventi sulle vie lacrimali");
+        InterventiOcul.add("Strabismo");
+        InterventiOcul.add("Trapianto di cornea");
+        InterventiOcul.add("Vitrectomia");
+
 
         List<String> InterventiRad = new ArrayList<String>();
-        InterventiRad.add("2 Guns");
-        InterventiRad.add("The Smurfs 2");
-        InterventiRad.add("The Spectacular Now");
-        InterventiRad.add("The Canyons");
-        InterventiRad.add("Europa Report");
+        InterventiRad.add("Crioablazione osso altro distretto");
+        InterventiRad.add("Crioablazione femore");
+        InterventiRad.add("Crioablazione gamba");
+        InterventiRad.add("Crioablazione osso arto superiore");
+        InterventiRad.add("Embolizzazione arteria uterina per miomi");
+        InterventiRad.add("HIFU osso arto inferiore");
+        InterventiRad.add("HIFU osso arto superiore");
+        InterventiRad.add("HIFU utero");
+
 
         List<String> InterventiTor = new ArrayList<String>();
-        InterventiTor.add("2 Guns");
-        InterventiTor.add("The Smurfs 2");
-        InterventiTor.add("The Spectacular Now");
-        InterventiTor.add("The Canyons");
-        InterventiTor.add("Europa Report");
+        InterventiTor.add("Chirurgia toracica");
 
         listDataChild.put(listDataHeader.get(0), InterventiGen); // Header, Child data
         listDataChild.put(listDataHeader.get(1), InterventiOrt);
