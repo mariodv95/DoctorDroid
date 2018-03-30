@@ -12,7 +12,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="54dp">
+            tools:layout_editor_absoluteY="54dp"
+            tools:ignore="MissingConstraints">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -68,14 +69,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="<65" />
+                            android:text="meno di 65 anni" />
 
                         <RadioButton
                             android:id="@+id/radioOver65"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text=">= 65" />
+                            android:text="65 anni o più" />
                     </RadioGroup>
 
                 </LinearLayout>
@@ -108,14 +109,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="<50" />
+                            android:text="meno di 50kg" />
 
                         <RadioButton
                             android:id="@+id/radioOver50kg"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text=">=50" />
+                            android:text="50kg o più" />
                     </RadioGroup>
 
                 </LinearLayout>
