@@ -164,6 +164,7 @@ public class SurgeryActivity extends AppCompatActivity {
                         clickedOpNumber == 134 || clickedOpNumber == 137 || clickedOpNumber == 140 || clickedOpNumber == 146 ||
                         clickedOpNumber == 147 || clickedOpNumber == 148)){
                     clickedOperation = clickedOperation; //CLASSE A
+
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 11 || clickedOpNumber == 17 ||
                         clickedOpNumber == 18 || clickedOpNumber == 19 || clickedOpNumber == 20 || clickedOpNumber == 21 ||
                         clickedOpNumber == 29 || clickedOpNumber == 30 || clickedOpNumber == 34 || clickedOpNumber == 35 ||
@@ -178,12 +179,61 @@ public class SurgeryActivity extends AppCompatActivity {
                         clickedOpNumber == 138 || clickedOpNumber == 141 || clickedOpNumber == 142 || clickedOpNumber == 143 ||
                         clickedOpNumber == 144 || clickedOpNumber == 145 )){
                     clickedOperation = clickedOperation; //CLASSE B
+
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 2 || clickedOpNumber == 26 ||
                         clickedOpNumber == 76 || clickedOpNumber == 86 || clickedOpNumber == 103 || clickedOpNumber == 104 ||
                         clickedOpNumber == 105 || clickedOpNumber == 107 || clickedOpNumber == 108 || clickedOpNumber == 109 ||
                         clickedOpNumber == 111 || clickedOpNumber == 117 || clickedOpNumber == 129 || clickedOpNumber == 139)){
                     clickedOperation = clickedOperation; //CLASSE C
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 3 || clickedOpNumber == 4 ||
+                        clickedOpNumber == 5)){
+                    clickedOperation = clickedOperation; //AMPUTAZIONE ARTO INFERIORE
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 6 || clickedOpNumber == 15 ||
+                        clickedOpNumber == 16 || clickedOpNumber == 23 || clickedOpNumber == 27 || clickedOpNumber == 33 ||
+                        clickedOpNumber == 36 || clickedOpNumber == 41 || clickedOpNumber == 42 || clickedOpNumber == 43 ||
+                        clickedOpNumber == 44 || clickedOpNumber == 45 || clickedOpNumber == 51 || clickedOpNumber == 52 ||
+                        clickedOpNumber == 53 || clickedOpNumber == 54 || clickedOpNumber == 60 || clickedOpNumber == 61 ||
+                        clickedOpNumber == 66 || clickedOpNumber == 72 || clickedOpNumber == 79 || clickedOpNumber == 85 ||
+                        clickedOpNumber == 92 || clickedOpNumber == 95 || clickedOpNumber == 96 || clickedOpNumber == 100 ||
+                        clickedOpNumber == 118 || clickedOpNumber == 125 || clickedOpNumber == 128 || clickedOpNumber == 131 ||
+                        clickedOpNumber == 149)){
+                    clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE INTENSO
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 7)){
+                    clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 63 || clickedOpNumber == 64)){
+                    clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 40)) {
+                    clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 65)) {
+                    clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 82)) {
+                    clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 102)) {
+                    clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 112)) {
+                    clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -1
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 113 || clickedOpNumber == 132)) {
+                    clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -2
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 90)) {
+                    clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -3
+
+                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 31)) {
+                    clickedOperation = clickedOperation; //CHIRURGIA TORACICA - TORACICA
+
                 }
+
+
                 /*switch(clickedOperation){
                     case /*value: */
                         /*do something
