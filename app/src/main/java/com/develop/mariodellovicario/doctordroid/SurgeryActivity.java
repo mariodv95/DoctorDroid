@@ -142,14 +142,56 @@ public class SurgeryActivity extends AppCompatActivity {
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
                 // TODO Auto-generated method stub
+                int clickedOpNumber = childPosition;
+                String clickedOperation = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
+                String groupClicked = listDataHeader.get(groupPosition);
                 Toast.makeText(
                         getApplicationContext(),
                         listDataHeader.get(groupPosition)
                                 + " : "
-                                + listDataChild.get(
-                                listDataHeader.get(groupPosition)).get(
-                                childPosition), Toast.LENGTH_SHORT)
+                                + clickedOperation + childPosition, Toast.LENGTH_SHORT)
                         .show();
+                if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 0 || clickedOpNumber == 1 ||
+                        clickedOpNumber == 8 || clickedOpNumber == 9 ||
+                        clickedOpNumber == 10 || clickedOpNumber == 12 || clickedOpNumber == 13 || clickedOpNumber == 14 ||
+                        clickedOpNumber == 22 || clickedOpNumber == 24 || clickedOpNumber == 25 || clickedOpNumber == 28 ||
+                        clickedOpNumber == 32 || clickedOpNumber == 39 || clickedOpNumber == 47 || clickedOpNumber == 67 ||
+                        clickedOpNumber == 68 || clickedOpNumber == 69 || clickedOpNumber == 73 || clickedOpNumber == 74 ||
+                        clickedOpNumber == 75 || clickedOpNumber == 77 || clickedOpNumber == 83 || clickedOpNumber == 87 ||
+                        clickedOpNumber == 89 || clickedOpNumber == 91 || clickedOpNumber == 114 || clickedOpNumber == 115 ||
+                        clickedOpNumber == 119 || clickedOpNumber == 120 || clickedOpNumber == 121 || clickedOpNumber == 122 ||
+                        clickedOpNumber == 123 || clickedOpNumber == 124 || clickedOpNumber == 130 || clickedOpNumber == 133 ||
+                        clickedOpNumber == 134 || clickedOpNumber == 137 || clickedOpNumber == 140 || clickedOpNumber == 146 ||
+                        clickedOpNumber == 147 || clickedOpNumber == 148)){
+                    clickedOperation = clickedOperation; //CLASSE A
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 11 || clickedOpNumber == 17 ||
+                        clickedOpNumber == 18 || clickedOpNumber == 19 || clickedOpNumber == 20 || clickedOpNumber == 21 ||
+                        clickedOpNumber == 29 || clickedOpNumber == 30 || clickedOpNumber == 34 || clickedOpNumber == 35 ||
+                        clickedOpNumber == 37 || clickedOpNumber == 38 || clickedOpNumber == 46 || clickedOpNumber == 48 ||
+                        clickedOpNumber == 49 || clickedOpNumber == 50 || clickedOpNumber == 55 || clickedOpNumber == 56 ||
+                        clickedOpNumber == 57 || clickedOpNumber == 58 || clickedOpNumber == 59 || clickedOpNumber == 62 ||
+                        clickedOpNumber == 70 || clickedOpNumber == 71 || clickedOpNumber == 78 || clickedOpNumber == 80 ||
+                        clickedOpNumber == 81 || clickedOpNumber == 84 || clickedOpNumber == 88 || clickedOpNumber == 93 ||
+                        clickedOpNumber == 94 || clickedOpNumber == 97 || clickedOpNumber == 98 || clickedOpNumber == 99 ||
+                        clickedOpNumber == 101 || clickedOpNumber == 106 || clickedOpNumber == 110 || clickedOpNumber == 116 ||
+                        clickedOpNumber == 126 || clickedOpNumber == 127 || clickedOpNumber == 135 || clickedOpNumber == 136 ||
+                        clickedOpNumber == 138 || clickedOpNumber == 141 || clickedOpNumber == 142 || clickedOpNumber == 143 ||
+                        clickedOpNumber == 144 || clickedOpNumber == 145 )){
+                    clickedOperation = clickedOperation; //CLASSE B
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 2 || clickedOpNumber == 26 ||
+                        clickedOpNumber == 76 || clickedOpNumber == 86 || clickedOpNumber == 103 || clickedOpNumber == 104 ||
+                        clickedOpNumber == 105 || clickedOpNumber == 107 || clickedOpNumber == 108 || clickedOpNumber == 109 ||
+                        clickedOpNumber == 111 || clickedOpNumber == 117 || clickedOpNumber == 129 || clickedOpNumber == 139)){
+                    clickedOperation = clickedOperation; //CLASSE C
+                }
+                /*switch(clickedOperation){
+                    case /*value: */
+                        /*do something
+                        break;
+                    case /*othervalue:*/
+                        /*do something else
+                        break;
+                }*/
                 return false;
             }
         });
