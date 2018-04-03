@@ -145,12 +145,12 @@ public class SurgeryActivity extends AppCompatActivity {
                 int clickedOpNumber = childPosition;
                 String clickedOperation = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
                 String groupClicked = listDataHeader.get(groupPosition);
-                Toast.makeText(
+                /*Toast.makeText(
                         getApplicationContext(),
                         listDataHeader.get(groupPosition)
                                 + " : "
                                 + clickedOperation + childPosition, Toast.LENGTH_SHORT)
-                        .show();
+                        .show();*/
 
                 //ELENCO DI TUTTE LE OPERAZIONI CHIRURGICHE SELEZIONABILI PRESENTI NELLE LISTE
 
@@ -213,16 +213,16 @@ public class SurgeryActivity extends AppCompatActivity {
                             "CLASSE C", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if((groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 3 || clickedOpNumber == 4 ||
+                } else if((groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 3 || clickedOpNumber == 4 ||
                         clickedOpNumber == 5)) ||
-                        (groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 1 || clickedOpNumber == 2 || clickedOpNumber == 3))){
+                        (groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 1 || clickedOpNumber == 2 || clickedOpNumber == 3))){
                     clickedOperation = clickedOperation; //AMPUTAZIONE ARTO INFERIORE
                     Toast.makeText(
                             getApplicationContext(),
                             "AMPUTAZIONE ARTO INFERIORE", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 6 || clickedOpNumber == 15 ||
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 6 || clickedOpNumber == 15 ||
                         clickedOpNumber == 16 || clickedOpNumber == 23 || clickedOpNumber == 27 || clickedOpNumber == 33 ||
                         clickedOpNumber == 36 || clickedOpNumber == 41 || clickedOpNumber == 42 || clickedOpNumber == 43 ||
                         clickedOpNumber == 44 || clickedOpNumber == 45 || clickedOpNumber == 51 || clickedOpNumber == 52 ||
@@ -237,77 +237,77 @@ public class SurgeryActivity extends AppCompatActivity {
                             "CHIRURGIA ADDOMINALE DOLORE INTENSO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 7)){
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 7)){
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 63 || clickedOpNumber == 64)){
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 63 || clickedOpNumber == 64)){
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 40)) {
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 40)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 65)) {
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 65)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 82)) {
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 82)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 102)) {
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 102)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 112)) {
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 112)) {
                     clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -1
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA MAMMELLA -1", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 113 || clickedOpNumber == 132)) {
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 113 || clickedOpNumber == 132)) {
                     clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -2
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA MAMMELLA -2", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 90)) {
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 90)) {
                     clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -3
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA MAMMELLA -3", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Generale" && (clickedOpNumber == 31)) {
+                } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 31)) {
                     clickedOperation = clickedOperation; //CHIRURGIA TORACICA - TORACICA
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA TORACICA - TORACICA", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 5 || clickedOpNumber == 11 ||
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 5 || clickedOpNumber == 11 ||
                         clickedOpNumber == 12 || clickedOpNumber == 22 || clickedOpNumber == 38)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - SPALLA OMERO PROSSIMALE CLAVICOLA
                     Toast.makeText(
@@ -315,42 +315,42 @@ public class SurgeryActivity extends AppCompatActivity {
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - SPALLA OMERO PROSSIMALE CLAVICOLA", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 8 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 8 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELLA MANO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELLA MANO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 18 || clickedOpNumber == 26 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 18 || clickedOpNumber == 26 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELL'OMERO MEDIO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELL'OMERO MEDIO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 27 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 27 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DISTALE OMERO GOMITO AVAMBRACCIO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DISTALE OMERO GOMITO AVAMBRACCIO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 4 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 4 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE - ARTROPROTESI DI ANCA
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE - ARTROPROTESI DI ANCA", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 36 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 36 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - ARTROPROTESI DI ANCA
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - ARTROPROTESI DI ANCA", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 16 || clickedOpNumber == 17 ||
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 16 || clickedOpNumber == 17 ||
                         clickedOpNumber == 19 || clickedOpNumber == 23 || clickedOpNumber == 24 || clickedOpNumber == 25 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - FEMORE E TESSUTI MOLLI COSCIA
                     Toast.makeText(
@@ -358,84 +358,89 @@ public class SurgeryActivity extends AppCompatActivity {
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - FEMORE E TESSUTI MOLLI COSCIA", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 20 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 20 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DEL BACINO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DEL BACINO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 21 || clickedOpNumber == 29 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 21 || clickedOpNumber == 29 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DELLA GAMBA PROSSIMALE
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DELLA GAMBA PROSSIMALE", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 28 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 28 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DEL POLSO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DEL POLSO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 30 || clickedOpNumber == 35)) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 30 || clickedOpNumber == 35)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DEL PIEDE
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DEL PIEDE", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 31 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 31 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DELLA GAMBA DISTALE
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DELLA GAMBA DISTALE", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 37 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 37 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - PROTESI DI GINOCCHIO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - PROTESI DI GINOCCHIO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Ortopedia" && (clickedOpNumber == 39 )) {
+                } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 39 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE - RICOSTRUZIONE DEL CROCIATO
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE - RICOSTRUZIONE DEL CROCIATO", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Radiologia" && (clickedOpNumber == 4 )) {
+                } else if(groupClicked == "Interventi di Radiologia" && (clickedOpNumber == 4 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE INTENSO (SOLO PERIDURALE CONTINUA)
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE INTENSO (SOLO PERIDURALE CONTINUA)", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Radiologia" && (clickedOpNumber == 1)) {
+                } else if(groupClicked == "Interventi di Radiologia" && (clickedOpNumber == 1)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDICA ARTO INFERIORE - FEMORE TESSUTI MOLLI COSCIA
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDICA ARTO INFERIORE - FEMORE TESSUTI MOLLI COSCIA", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Radiologia" && (clickedOpNumber == 2)) {
+                } else if(groupClicked == "Interventi di Radiologia" && (clickedOpNumber == 2)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDICA ARTO INFERIORE - CHIRURGIA DELLA GAMBA
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDICA ARTO INFERIORE - CHIRURGIA DELLA GAMBA", Toast.LENGTH_SHORT)
                             .show();
 
-                } else if(groupClicked == "interventi di Chirurgia Toracica" && (clickedOpNumber == 0)) {
+                } else if(groupClicked == "Interventi di Chirurgia Toracica" && (clickedOpNumber == 0)) {
                     clickedOperation = clickedOperation; //CHIRURGIA TORACICA - CHIRURGIA TORACICA
                     Toast.makeText(
                             getApplicationContext(),
                             "CHIRURGIA TORACICA - CHIRURGIA TORACICA", Toast.LENGTH_SHORT)
                             .show();
 
+                } else {
+                    Toast.makeText(getApplicationContext(),
+                            "ERRORE NELLA LOGICA CONDIZIONALE", Toast.LENGTH_SHORT)
+                            .show();
                 }
+
 
                 //FINE ELENCO DI TUTTE LE OPERAZIONI CHIRURGICHE. INSERIRE GLI INTENT CHE LE COLLEGANO ALLE APPROPRIATE TABELLE
 
