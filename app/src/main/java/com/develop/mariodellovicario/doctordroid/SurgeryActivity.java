@@ -26,8 +26,10 @@ public class SurgeryActivity extends AppCompatActivity {
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
     Button infContBtn;
-    Button oppPerBtn;
-    Button oppSubBtn;
+    Button oppPerSubBtn;
+    Button analPerContBolBtn;
+    Button analPerContBtn;
+    Button forDilBtn;
 
 
     //blocco toolbar inizio
@@ -90,9 +92,9 @@ public class SurgeryActivity extends AppCompatActivity {
             }
         });
 
-        oppPerBtn = (Button) findViewById(R.id.btnOppPer);
+        oppPerSubBtn = (Button) findViewById(R.id.btnOppPerSub);
 
-        oppPerBtn.setOnClickListener(new View.OnClickListener(){
+        oppPerSubBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             //On click function
             public void onClick(View view) {
@@ -101,14 +103,36 @@ public class SurgeryActivity extends AppCompatActivity {
             }
         });
 
-        oppSubBtn = (Button) findViewById(R.id.btnOppSub);
+        analPerContBolBtn = (Button) findViewById(R.id.btnAnalPerContBol);
 
-        oppSubBtn.setOnClickListener(new View.OnClickListener(){
+        analPerContBolBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             //On click function
             public void onClick(View view) {
                 //thigs to do on button press...example toast:
                 Toast.makeText(getApplicationContext(), "tabelle3", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        analPerContBtn = (Button) findViewById(R.id.btnAnalPerCont);
+
+        analPerContBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            //On click function
+            public void onClick(View view) {
+                //thigs to do on button press...example toast:
+                Toast.makeText(getApplicationContext(), "tabelle4", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        forDilBtn = (Button) findViewById(R.id.btnForDil);
+
+        forDilBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            //On click function
+            public void onClick(View view) {
+                //thigs to do on button press...example toast:
+                Toast.makeText(getApplicationContext(), "tabelle5", Toast.LENGTH_SHORT).show();
             }
         });
 

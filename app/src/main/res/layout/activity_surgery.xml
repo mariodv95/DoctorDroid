@@ -75,38 +75,64 @@
         <Button
             android:id="@+id/btnInfCont"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@drawable/mybutton"
             android:gravity="center_vertical|center_horizontal|center"
-            android:text="Farmaci ad Infusione Continua"
+            android:text="Farmaci ad Infusione Continua ed in bolo - adulti"
             android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
+            android:textSize="12sp"
             android:textStyle="normal|bold"
             tools:layout_editor_absoluteX="24dp"
             tools:layout_editor_absoluteY="511dp" />
 
         <Button
-            android:id="@+id/btnOppPer"
+            android:id="@+id/btnOppPerSub"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@drawable/mybutton"
             android:gravity="center_vertical|center_horizontal|center"
-            android:text="Oppiacei Per Via Epiturale"
+            android:text="Oppiacei Per Via Peridurale e subaracnoidea"
             android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
+            android:textSize="12sp"
             android:textStyle="normal|bold"
             tools:layout_editor_absoluteX="24dp"
             tools:layout_editor_absoluteY="511dp" />
 
         <Button
-            android:id="@+id/btnOppSub"
+            android:id="@+id/btnAnalPerContBol"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@drawable/mybutton"
             android:gravity="center_vertical|center_horizontal|center"
-            android:text="Oppiacei per via subaracnidea"
+            android:text="analgesia peridurale continua e in bolo"
             android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="511dp" />
+
+        <Button
+            android:id="@+id/btnAnalPerCont"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/mybutton"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Analgesia peridurale continua"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="511dp" />
+
+        <Button
+            android:id="@+id/btnForDil"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/mybutton"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Formule per diluizioni"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
             android:textStyle="normal|bold"
             tools:layout_editor_absoluteX="24dp"
             tools:layout_editor_absoluteY="511dp" />
