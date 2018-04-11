@@ -15,10 +15,18 @@
             tools:layout_editor_absoluteY="54dp"
             tools:ignore="MissingConstraints">
 
+            <TextView
+                android:id="@+id/selectedOpTxt"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="3dp"
                 android:background="?attr/colorPrimary"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme" />

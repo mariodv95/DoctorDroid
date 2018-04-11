@@ -1,5 +1,6 @@
 package com.develop.mariodellovicario.doctordroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
@@ -169,6 +170,7 @@ public class SurgeryActivity extends AppCompatActivity {
                 int clickedOpNumber = childPosition;
                 String clickedOperation = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
                 String groupClicked = listDataHeader.get(groupPosition);
+                String tableToShow = null;
                 /*Toast.makeText(
                         getApplicationContext(),
                         listDataHeader.get(groupPosition)
@@ -203,6 +205,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CLASSE A", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CLASSE A";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if((groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 11 || clickedOpNumber == 17 ||
                         clickedOpNumber == 18 || clickedOpNumber == 19 || clickedOpNumber == 20 || clickedOpNumber == 21 ||
@@ -226,6 +234,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CLASSE B", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CLASSE B";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 2 || clickedOpNumber == 26 ||
                         clickedOpNumber == 76 || clickedOpNumber == 86 || clickedOpNumber == 103 || clickedOpNumber == 104 ||
@@ -236,6 +250,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CLASSE C", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CLASSE C";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if((groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 3 || clickedOpNumber == 4 ||
                         clickedOpNumber == 5)) ||
@@ -245,6 +265,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "AMPUTAZIONE ARTO INFERIORE", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "AMPUTAZIONE ARTO INFERIORE";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 6 || clickedOpNumber == 15 ||
                         clickedOpNumber == 16 || clickedOpNumber == 23 || clickedOpNumber == 27 || clickedOpNumber == 33 ||
@@ -260,6 +286,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE INTENSO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ADDOMINALE DOLORE INTENSO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 7)){
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA
@@ -267,6 +299,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 63 || clickedOpNumber == 64)){
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE
@@ -274,6 +312,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 40)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE
@@ -281,6 +325,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 65)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE
@@ -288,6 +338,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 82)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO
@@ -295,6 +351,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 102)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO
@@ -302,6 +364,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 112)) {
                     clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -1
@@ -309,6 +377,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA MAMMELLA -1", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA MAMMELLA -1";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 113 || clickedOpNumber == 132)) {
                     clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -2
@@ -316,6 +390,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA MAMMELLA -2", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA MAMMELLA -2";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 90)) {
                     clickedOperation = clickedOperation; //CHIRURGIA MAMMELLA -3
@@ -323,6 +403,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA MAMMELLA -3", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA MAMMELLA -3";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Generale" && (clickedOpNumber == 31)) {
                     clickedOperation = clickedOperation; //CHIRURGIA TORACICA - TORACICA
@@ -330,6 +416,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA TORACICA - TORACICA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA TORACICA - TORACICA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 5 || clickedOpNumber == 11 ||
                         clickedOpNumber == 12 || clickedOpNumber == 22 || clickedOpNumber == 38)) {
@@ -338,6 +430,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - SPALLA OMERO PROSSIMALE CLAVICOLA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - SPALLA OMERO PROSSIMALE CLAVICOLA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 8 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELLA MANO
@@ -345,6 +443,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELLA MANO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELLA MANO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 18 || clickedOpNumber == 26 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELL'OMERO MEDIO
@@ -352,6 +456,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELL'OMERO MEDIO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELL'OMERO MEDIO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 27 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DISTALE OMERO GOMITO AVAMBRACCIO
@@ -359,6 +469,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DISTALE OMERO GOMITO AVAMBRACCIO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DISTALE OMERO GOMITO AVAMBRACCIO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 4 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE - ARTROPROTESI DI ANCA
@@ -366,6 +482,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE - ARTROPROTESI DI ANCA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE - ARTROPROTESI DI ANCA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 36 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - ARTROPROTESI DI ANCA
@@ -373,6 +495,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - ARTROPROTESI DI ANCA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - ARTROPROTESI DI ANCA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 16 || clickedOpNumber == 17 ||
                         clickedOpNumber == 19 || clickedOpNumber == 23 || clickedOpNumber == 24 || clickedOpNumber == 25 )) {
@@ -381,6 +509,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - FEMORE E TESSUTI MOLLI COSCIA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - FEMORE E TESSUTI MOLLI COSCIA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 20 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DEL BACINO
@@ -388,6 +522,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DEL BACINO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DEL BACINO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 21 || clickedOpNumber == 29 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DELLA GAMBA PROSSIMALE
@@ -395,6 +535,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DELLA GAMBA PROSSIMALE", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DELLA GAMBA PROSSIMALE";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 28 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DEL POLSO
@@ -402,6 +548,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DEL POLSO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DEL POLSO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 30 || clickedOpNumber == 35)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DEL PIEDE
@@ -409,6 +561,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DEL PIEDE", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DEL PIEDE";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 31 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DELLA GAMBA DISTALE
@@ -416,6 +574,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DELLA GAMBA DISTALE", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DELLA GAMBA DISTALE";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 37 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - PROTESI DI GINOCCHIO
@@ -423,6 +587,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - PROTESI DI GINOCCHIO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - PROTESI DI GINOCCHIO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Ortopedia" && (clickedOpNumber == 39 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDIA ARTO INFERIORE - RICOSTRUZIONE DEL CROCIATO
@@ -430,6 +600,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDIA ARTO INFERIORE - RICOSTRUZIONE DEL CROCIATO", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDIA ARTO INFERIORE - RICOSTRUZIONE DEL CROCIATO";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Radiologia" && (clickedOpNumber == 4 )) {
                     clickedOperation = clickedOperation; //CHIRURGIA ADDOMINALE DOLORE INTENSO (SOLO PERIDURALE CONTINUA)
@@ -437,6 +613,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ADDOMINALE DOLORE INTENSO (SOLO PERIDURALE CONTINUA)", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ADDOMINALE DOLORE INTENSO (SOLO PERIDURALE CONTINUA)";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Radiologia" && (clickedOpNumber == 1)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDICA ARTO INFERIORE - FEMORE TESSUTI MOLLI COSCIA
@@ -444,6 +626,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDICA ARTO INFERIORE - FEMORE TESSUTI MOLLI COSCIA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDICA ARTO INFERIORE - FEMORE TESSUTI MOLLI COSCIA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Radiologia" && (clickedOpNumber == 2)) {
                     clickedOperation = clickedOperation; //CHIRURGIA ORTOPEDICA ARTO INFERIORE - CHIRURGIA DELLA GAMBA
@@ -451,6 +639,12 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA ORTOPEDICA ARTO INFERIORE - CHIRURGIA DELLA GAMBA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA ORTOPEDICA ARTO INFERIORE - CHIRURGIA DELLA GAMBA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else if(groupClicked == "Interventi di Chirurgia Toracica" && (clickedOpNumber == 0)) {
                     clickedOperation = clickedOperation; //CHIRURGIA TORACICA - CHIRURGIA TORACICA
@@ -458,11 +652,23 @@ public class SurgeryActivity extends AppCompatActivity {
                             getApplicationContext(),
                             "CHIRURGIA TORACICA - CHIRURGIA TORACICA", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "CHIRURGIA TORACICA - CHIRURGIA TORACICA";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
 
                 } else {
                     Toast.makeText(getApplicationContext(),
                             "ERRORE NELLA LOGICA CONDIZIONALE", Toast.LENGTH_SHORT)
                             .show();
+                    tableToShow = "ERRORE NELLA LOGICA CONDIZIONALE";
+                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
+                    dataPageIntent.putExtra("group", groupClicked);
+                    dataPageIntent.putExtra("operation", clickedOperation);
+                    dataPageIntent.putExtra("table", tableToShow);
+                    startActivity(dataPageIntent);
                 }
 
 
