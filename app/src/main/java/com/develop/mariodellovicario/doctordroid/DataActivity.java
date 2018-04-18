@@ -17,6 +17,13 @@ import android.widget.Toast;
 public class DataActivity extends AppCompatActivity {
 
     Button mostraTabellaBtn;
+    String group = null;
+    String operation = null;
+    String tabToShow = null;
+    String etaData = null;
+    String pesoData = null;
+    String alimData = null;
+    String asaData = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +50,7 @@ public class DataActivity extends AppCompatActivity {
         CheckBox checkBoxFans;
         CheckBox checkBoxInsuff;
 
-        String group = null;
-        String operation = null;
-        String tabToShow = null;
-        String etaData = null;
-        String pesoData = null;
-        String alimData = null;
-        String asaData = null;
+
 
         Bundle extras = getIntent().getExtras();
         if( extras != null){
@@ -128,6 +129,14 @@ public class DataActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //thigs to do on button press...example toast:
                 Toast.makeText(getApplicationContext(), "Mostra Tabella Corrispondente", Toast.LENGTH_SHORT).show();
+                //tabToShow = tabToShow + etaData + pesoData + alimData +  asaData;
+                if(tabToShow == "CLASSE A"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CLASSE B"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CLASSE C"){
+                    //controlla i dati e mostra tabella corrispondente
+                }//else if...CONTINUA CON TUTTE LE ALTRE TABELLE (STESSA LISTA DELL'ACTIVITY PRECEDENTE)
             }
         });
 
