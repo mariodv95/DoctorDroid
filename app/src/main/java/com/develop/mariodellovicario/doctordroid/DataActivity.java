@@ -147,7 +147,7 @@ public class DataActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Mostra Tabella Corrispondente", Toast.LENGTH_SHORT).show();
                 //tabToShow = tabToShow + etaData + pesoData + alimData +  asaData;
                 if(tabToShow == "CLASSE A"){
-                    Intent classAIntent = new Intent(DataActivity.this, DataActivity.class);
+                    Intent classAIntent = new Intent(DataActivity.this, ClassATable.class);
                     classAIntent.putExtra("alim", alimData);
                     classAIntent.putExtra("fans", intollFans);
                     classAIntent.putExtra("eta", etaData);

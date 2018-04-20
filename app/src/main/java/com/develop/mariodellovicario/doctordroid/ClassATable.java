@@ -15,6 +15,13 @@ public class ClassATable extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_a_table);
 
+        Bundle extras = getIntent().getExtras();
+        if( extras != null){
+            alim = extras.getString("alim");
+            fans = extras.getString("fans");
+            eta = extras.getString("eta");
+        }
+
         TextView proto24 = (TextView)findViewById(R.id.protocolloA24Txt);
         TextView somm24 = (TextView)findViewById(R.id.somministr24txt);
         TextView farm24 = (TextView)findViewById(R.id.farmaci24Txt);
@@ -22,13 +29,6 @@ public class ClassATable extends AppCompatActivity {
         TextView sommSalv = (TextView)findViewById(R.id.somministrSalvtxt);
         TextView farmSalv = (TextView)findViewById(R.id.farmaciSalvTxt);
         TextView gastrSalv = (TextView)findViewById(R.id.gastroSalvTxt);
-
-        Bundle extras = getIntent().getExtras();
-        if( extras != null){
-            alim = extras.getString("alim");
-            fans = extras.getString("fans");
-            eta = extras.getString("eta");
-        }
 
         if(alim == "siAlim" && fans == "tollerante"){
             proto24.setText("A3 prime 24 ore - il paziente si alimenta");
