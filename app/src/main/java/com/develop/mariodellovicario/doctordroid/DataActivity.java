@@ -136,6 +136,66 @@ public class DataActivity extends AppCompatActivity {
                     //controlla i dati e mostra tabella corrispondente
                 }else if(tabToShow == "CLASSE C"){
                     //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "AMPUTAZIONE ARTO INFERIORE"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE INTENSO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA MAMMELLA -1"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA MAMMELLA -2"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA MAMMELLA -3"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA TORACICA - TORACICA"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - SPALLA OMERO PROSSIMALE CLAVICOLA"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELLA MANO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELL'OMERO MEDIO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DISTALE OMERO GOMITO AVAMBRACCIO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE - ARTROPROTESI DI ANCA"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - ARTROPROTESI DI ANCA"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - FEMORE E TESSUTI MOLLI COSCIA"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DEL BACINO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DELLA GAMBA PROSSIMALE"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DEL POLSO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DEL PIEDE"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DELLA GAMBA DISTALE"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - PROTESI DI GINOCCHIO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE - RICOSTRUZIONE DEL CROCIATO"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE INTENSO (SOLO PERIDURALE CONTINUA)"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDICA ARTO INFERIORE - FEMORE TESSUTI MOLLI COSCIA"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA ORTOPEDICA ARTO INFERIORE - CHIRURGIA DELLA GAMBA"){
+                    //controlla i dati e mostra tabella corrispondente
+                }else if(tabToShow == "CHIRURGIA TORACICA - CHIRURGIA TORACICA"){
+                    //controlla i dati e mostra tabella corrispondente
                 }//else if...CONTINUA CON TUTTE LE ALTRE TABELLE (STESSA LISTA DELL'ACTIVITY PRECEDENTE)
             }
         });

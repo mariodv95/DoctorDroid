@@ -664,11 +664,6 @@ public class SurgeryActivity extends AppCompatActivity {
                             "ERRORE NELLA LOGICA CONDIZIONALE", Toast.LENGTH_SHORT)
                             .show();
                     tableToShow = "ERRORE NELLA LOGICA CONDIZIONALE";
-                    Intent dataPageIntent = new Intent(SurgeryActivity.this, DataActivity.class);
-                    dataPageIntent.putExtra("group", groupClicked);
-                    dataPageIntent.putExtra("operation", clickedOperation);
-                    dataPageIntent.putExtra("table", tableToShow);
-                    startActivity(dataPageIntent);
                 }
 
 
