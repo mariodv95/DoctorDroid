@@ -39,7 +39,7 @@ public class DataActivity extends AppCompatActivity {
         RadioGroup radioGroupPeso;
         RadioGroup radioGroupAlim;
         RadioGroup radioGroupASA;
-        final RadioButton radioButtonMeno65;
+        RadioButton radioButtonMeno65;
         RadioButton radioButtonPiu65;
         RadioButton radioButtonMeno50kg;
         RadioButton radioButtonPiu50kg;
