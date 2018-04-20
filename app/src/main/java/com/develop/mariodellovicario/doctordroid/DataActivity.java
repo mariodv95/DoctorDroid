@@ -1,5 +1,6 @@
 package com.develop.mariodellovicario.doctordroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
@@ -24,6 +25,8 @@ public class DataActivity extends AppCompatActivity {
     String pesoData = null;
     String alimData = null;
     String asaData = null;
+    String intollFans = null;
+    String insuff = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +82,8 @@ public class DataActivity extends AppCompatActivity {
         radioButtonAsa3 = (RadioButton)findViewById(R.id.radioAsa3);
         radioButtonAsa4 = (RadioButton)findViewById(R.id.radioAsa4);
         radioButtonAsa5 = (RadioButton)findViewById(R.id.radioAsa5);
+        checkBoxFans = (CheckBox)findViewById(R.id.checkBoxFans);
+        checkBoxInsuff = (CheckBox)findViewById(R.id.checkBoxInsuff);
 
         if (radioButtonMeno65.isChecked()){
             etaData = "meno65";
@@ -118,6 +123,17 @@ public class DataActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi all'ASA per continuare", Toast.LENGTH_SHORT).show();
         }
 
+        if(checkBoxFans.isChecked()){
+            intollFans = "intollerante";
+        }else{
+            intollFans = "tollerante";
+        }
+        if(checkBoxInsuff.isChecked()){
+            insuff = "insuff";
+        }else{
+            insuff = "no";
+        }
+
 
         //BOTTONE PER MOSTRARE TABELLA /////////////////////
 
@@ -131,7 +147,10 @@ public class DataActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Mostra Tabella Corrispondente", Toast.LENGTH_SHORT).show();
                 //tabToShow = tabToShow + etaData + pesoData + alimData +  asaData;
                 if(tabToShow == "CLASSE A"){
-                    //controlla i dati e mostra tabella corrispondente
+                    Intent classAIntent = new Intent(DataActivity.this, DataActivity.class);
+                    classAIntent.putExtra("alim", alimData);
+                    classAIntent.putExtra("fans", intollFans);
+                    startActivity(classAIntent);
                 }else if(tabToShow == "CLASSE B"){
                     //controlla i dati e mostra tabella corrispondente
                 }else if(tabToShow == "CLASSE C"){
