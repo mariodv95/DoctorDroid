@@ -30,7 +30,7 @@ public class ClassATable extends AppCompatActivity {
         TextView farmSalv = (TextView)findViewById(R.id.farmaciSalvTxt);
         TextView gastrSalv = (TextView)findViewById(R.id.gastroSalvTxt);
 
-        if(alim == "siAlim" && fans == "tollerante"){
+        if(alim.equals("siAlim") && fans.equals("tollerante")){
             proto24.setText("A3 prime 24 ore - il paziente si alimenta");
             somm24.setText("os");
             farm24.setText("Paracetamolo 1g/8h");
@@ -38,7 +38,7 @@ public class ClassATable extends AppCompatActivity {
             sommSalv.setText("os");
             farmSalv.setText("Ketoralac 10mg/12h  || Ketoprofene 100mg/12h");
             gastrSalv.setText("Pantoprazolo 40mg");
-        }else if( alim == "siAlim" && fans == "intollerante"){
+        }else if( alim.equals("siAlim") && fans.equals("intollerante")){
             proto24.setText("A4 prime 24 ore - il paziente si alimenta e FANS controindicati");
             somm24.setText("os");
             farm24.setText("Paracetamolo 1g/8h");
@@ -47,7 +47,7 @@ public class ClassATable extends AppCompatActivity {
             farmSalv.setText("Tramadolo gtt(100mg/ml) 50-100mg(equivalenti a 20-40gtt) + Metoclopramide 10mg || " +
                     "Paracetamolo 500mg + Codeina 30mg(sospendere terapia con paracetamolo) 1-2 cpr o bustine/6h(max 6 cp o bustine/die)");
             gastrSalv.setText("");
-        }else if( alim == "noAlim" && fans == "tollerante"){
+        }else if( alim.equals("noAlim") && fans.equals("tollerante")){
             proto24.setText("A1 prime 24 ore - il paziente non si alimenta");
             somm24.setText("ev");
             farm24.setText("Paracetamolo 1g in 15' ogni 8h");
@@ -55,7 +55,7 @@ public class ClassATable extends AppCompatActivity {
             sommSalv.setText("ev");
             farmSalv.setText("Ketoralac 30mg ev in sol. fis. 100ml ripetibile ogni 8h");
             gastrSalv.setText("Pantoprazolo 40mg");
-        }else if( alim == "noAlim" && fans == "tollerante" && eta == "piu65"){
+        }else if( alim.equals("noAlim") && fans.equals("tollerante") && eta.equals("piu65")){
             proto24.setText("A1 prime 24 ore - il paziente non si alimenta");
             somm24.setText("ev");
             farm24.setText("Paracetamolo 1g in 15' ogni 8h");
@@ -63,7 +63,7 @@ public class ClassATable extends AppCompatActivity {
             sommSalv.setText("ev");
             farmSalv.setText("Ketoralac 30mg ev in sol. fis. 100ml ripetibile ogni 12h");
             gastrSalv.setText("Pantoprazolo 40mg");
-        }else if( alim == "noAlim" && fans == "intollerante"){
+        }else if( alim.equals("noAlim") && fans.equals("intollerante")){
             proto24.setText("A2 prime 24 ore - il paziente non si alimenta e FANS controindicati");
             somm24.setText("ev");
             farm24.setText("Paracetamolo 1g in 15' ogni 8h");
