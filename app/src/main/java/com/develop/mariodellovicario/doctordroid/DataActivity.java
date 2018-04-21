@@ -28,30 +28,28 @@ public class DataActivity extends AppCompatActivity {
     String intollFans = null;
     String insuff = null;
 
+    TextView opSelectedTxt;
+    RadioButton radioButtonMeno65;
+    RadioButton radioButtonPiu65;
+    RadioButton radioButtonMeno50kg;
+    RadioButton radioButtonPiu50kg;
+    RadioButton radioButtonSiAlim;
+    RadioButton radioButtonNoAlim;
+    RadioButton radioButtonAsa1;
+    RadioButton radioButtonAsa2;
+    RadioButton radioButtonAsa3;
+    RadioButton radioButtonAsa4;
+    RadioButton radioButtonAsa5;
+    CheckBox checkBoxFans;
+    CheckBox checkBoxInsuff;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        TextView opSelectedTxt;
-        RadioGroup radioGroupEta;
-        RadioGroup radioGroupPeso;
-        RadioGroup radioGroupAlim;
-        RadioGroup radioGroupASA;
-        RadioButton radioButtonMeno65;
-        RadioButton radioButtonPiu65;
-        RadioButton radioButtonMeno50kg;
-        RadioButton radioButtonPiu50kg;
-        RadioButton radioButtonSiAlim;
-        RadioButton radioButtonNoAlim;
-        RadioButton radioButtonAsa1;
-        RadioButton radioButtonAsa2;
-        RadioButton radioButtonAsa3;
-        RadioButton radioButtonAsa4;
-        RadioButton radioButtonAsa5;
-        CheckBox checkBoxFans;
-        CheckBox checkBoxInsuff;
+
 
 
 
@@ -65,7 +63,6 @@ public class DataActivity extends AppCompatActivity {
         opSelectedTxt = (TextView)findViewById(R.id.selectedOpTxt);
         opSelectedTxt.setText(group + ": "+operation);
 
-        //LOGICA RADIO BUTTONS
 
         /*radioGroupEta = (RadioGroup)findViewById(R.id.radioGroupEta);
         radioGroupPeso = (RadioGroup)findViewById(R.id.radioGroupPeso);
@@ -85,55 +82,6 @@ public class DataActivity extends AppCompatActivity {
         checkBoxFans = (CheckBox)findViewById(R.id.checkBoxFans);
         checkBoxInsuff = (CheckBox)findViewById(R.id.checkBoxInsuff);
 
-        /*if (radioButtonMeno65.isChecked()){
-            etaData = "meno65";
-        }else if(radioButtonPiu65.isChecked()){
-            etaData = "piu65";
-        }else if (!radioButtonMeno65.isChecked() && !radioButtonPiu65.isChecked()){
-            Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi all'età per continuare", Toast.LENGTH_SHORT).show();
-        }
-
-        if (radioButtonMeno50kg.isChecked()){
-            pesoData = "meno50kg";
-        }else if(radioButtonPiu50kg.isChecked()){
-            pesoData = "piu50kg";
-        }else if (!radioButtonMeno65.isChecked() && !radioButtonPiu65.isChecked()){
-            Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi al peso per continuare", Toast.LENGTH_SHORT).show();
-        }
-
-        if (radioButtonNoAlim.isChecked()){
-            alimData = "noAlim";
-        }else if(radioButtonSiAlim.isChecked()){
-            alimData = "siAlim";
-        }else if (!radioButtonMeno65.isChecked() && !radioButtonPiu65.isChecked()){
-            Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi all'alimentazione per continuare", Toast.LENGTH_SHORT).show();
-        }
-
-        if (radioButtonAsa1.isChecked()){
-            asaData = "asa1";
-        }else if(radioButtonAsa2.isChecked()){
-            asaData = "asa2";
-        }else if(radioButtonAsa3.isChecked()){
-            asaData = "asa3";
-        }else if(radioButtonAsa4.isChecked()){
-            asaData = "asa4";
-        }else if(radioButtonAsa5.isChecked()){
-            asaData = "asa5";
-        }else if (!radioButtonMeno65.isChecked() && !radioButtonPiu65.isChecked()){
-            Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi all'ASA per continuare", Toast.LENGTH_SHORT).show();
-        }
-
-        if(checkBoxFans.isChecked()){
-            intollFans = "intollerante";
-        }else{
-            intollFans = "tollerante";
-        }
-        if(checkBoxInsuff.isChecked()){
-            insuff = "insuff";
-        }else{
-            insuff = "no";
-        }*/ //IMPLEMENTARE SUCCESSIVAMENTE
-
 
         //BOTTONE PER MOSTRARE TABELLA /////////////////////
 
@@ -146,6 +94,55 @@ public class DataActivity extends AppCompatActivity {
                 //thigs to do on button press...example toast:
                 Toast.makeText(getApplicationContext(), "Mostra Tabella Corrispondente", Toast.LENGTH_SHORT).show();
                 //tabToShow = tabToShow + etaData + pesoData + alimData +  asaData;
+                if (radioButtonMeno65.isChecked()){
+                    etaData = "meno65";
+                }else if(radioButtonPiu65.isChecked()){
+                    etaData = "piu65";
+                }else if (!radioButtonMeno65.isChecked() && !radioButtonPiu65.isChecked()){
+                    Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi all'età per continuare", Toast.LENGTH_SHORT).show();
+                }
+
+                if (radioButtonMeno50kg.isChecked()){
+                    pesoData = "meno50kg";
+                }else if(radioButtonPiu50kg.isChecked()){
+                    pesoData = "piu50kg";
+                }else if (!radioButtonMeno65.isChecked() && !radioButtonPiu65.isChecked()){
+                    Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi al peso per continuare", Toast.LENGTH_SHORT).show();
+                }
+
+                if (radioButtonNoAlim.isChecked()){
+                    alimData = "noAlim";
+                }else if(radioButtonSiAlim.isChecked()){
+                    alimData = "siAlim";
+                }else if (!radioButtonMeno65.isChecked() && !radioButtonPiu65.isChecked()){
+                    Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi all'alimentazione per continuare", Toast.LENGTH_SHORT).show();
+                }
+
+                if (radioButtonAsa1.isChecked()){
+                    asaData = "asa1";
+                }else if(radioButtonAsa2.isChecked()){
+                    asaData = "asa2";
+                }else if(radioButtonAsa3.isChecked()){
+                    asaData = "asa3";
+                }else if(radioButtonAsa4.isChecked()){
+                    asaData = "asa4";
+                }else if(radioButtonAsa5.isChecked()){
+                    asaData = "asa5";
+                }else if (!radioButtonMeno65.isChecked() && !radioButtonPiu65.isChecked()){
+                    Toast.makeText(getApplicationContext(),"Inserisci i dati realtivi all'ASA per continuare", Toast.LENGTH_SHORT).show();
+                }
+
+                if(checkBoxFans.isChecked()){
+                    intollFans = "intollerante";
+                }else{
+                    intollFans = "tollerante";
+                }
+                if(checkBoxInsuff.isChecked()){
+                    insuff = "insuff";
+                }else{
+                    insuff = "no";
+                }
+
                 if(tabToShow == "CLASSE A"){
                     Intent classAIntent = new Intent(DataActivity.this, ClassATable.class);
                     classAIntent.putExtra("alim", alimData);
