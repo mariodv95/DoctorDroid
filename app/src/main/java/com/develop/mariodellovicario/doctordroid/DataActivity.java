@@ -92,8 +92,8 @@ public class DataActivity extends AppCompatActivity {
             //On click function
             public void onClick(View view) {
                 //thigs to do on button press...example toast:
-                Toast.makeText(getApplicationContext(), "Mostra Tabella Corrispondente", Toast.LENGTH_SHORT).show();
-                //tabToShow = tabToShow + etaData + pesoData + alimData +  asaData;
+                Toast.makeText(getApplicationContext(), tabToShow, Toast.LENGTH_SHORT).show();
+
                 if (radioButtonMeno65.isChecked()){
                     etaData = "meno65";
                 }else if(radioButtonPiu65.isChecked()){
@@ -143,75 +143,75 @@ public class DataActivity extends AppCompatActivity {
                     insuff = "no";
                 }
 
-                if(tabToShow == "CLASSE A"){
+                if(tabToShow.equals("CLASSE A")){
                     Intent classAIntent = new Intent(DataActivity.this, ClassATable.class);
                     classAIntent.putExtra("alim", alimData);
                     classAIntent.putExtra("fans", intollFans);
                     classAIntent.putExtra("eta", etaData);
                     startActivity(classAIntent);
-                }else if(tabToShow == "CLASSE B"){
+                }else if(tabToShow.equals("CLASSE B")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CLASSE C"){
+                }else if(tabToShow.equals("CLASSE C")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "AMPUTAZIONE ARTO INFERIORE"){
+                }else if(tabToShow.equals("AMPUTAZIONE ARTO INFERIORE")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE INTENSO"){
+                }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE INTENSO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA"){
+                }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE MODERATO - APPENDICECTOMIA")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE"){
+                }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA INGUINALE")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE"){
+                }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE MODERATO - CHIRURGIA LAPOROSCOPICA NON RETROPERIOTONEALE")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE"){
+                }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE MODERATO - ERNIOPLASTICA OMBELICALE")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO"){
+                }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE MODERATO - LAPAROCELE MEDIANO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO"){
+                }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE MODERATO - PARTO CESAREO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA MAMMELLA -1"){
+                }else if(tabToShow.equals("CHIRURGIA MAMMELLA -1")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA MAMMELLA -2"){
+                }else if(tabToShow.equals("CHIRURGIA MAMMELLA -2")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA MAMMELLA -3"){
+                }else if(tabToShow.equals("CHIRURGIA MAMMELLA -3")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA TORACICA - TORACICA"){
+                }else if(tabToShow.equals("CHIRURGIA TORACICA - TORACICA")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - SPALLA OMERO PROSSIMALE CLAVICOLA"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO SUPERIORE - SPALLA OMERO PROSSIMALE CLAVICOLA")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELLA MANO"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELLA MANO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELL'OMERO MEDIO"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DELL'OMERO MEDIO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DISTALE OMERO GOMITO AVAMBRACCIO"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DISTALE OMERO GOMITO AVAMBRACCIO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE - ARTROPROTESI DI ANCA"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE - ARTROPROTESI DI ANCA")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - ARTROPROTESI DI ANCA"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - ARTROPROTESI DI ANCA")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - FEMORE E TESSUTI MOLLI COSCIA"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - FEMORE E TESSUTI MOLLI COSCIA")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DEL BACINO"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DEL BACINO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DELLA GAMBA PROSSIMALE"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - CHIRURGIA DELLA GAMBA PROSSIMALE")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DEL POLSO"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO SUPERIORE - CHIRURGIA DEL POLSO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DEL PIEDE"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DEL PIEDE")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DELLA GAMBA DISTALE"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE - CHIRURGIA DELLA GAMBA DISTALE")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - PROTESI DI GINOCCHIO"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE E BACINO - PROTESI DI GINOCCHIO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDIA ARTO INFERIORE - RICOSTRUZIONE DEL CROCIATO"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDIA ARTO INFERIORE - RICOSTRUZIONE DEL CROCIATO")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ADDOMINALE DOLORE INTENSO (SOLO PERIDURALE CONTINUA)"){
+                }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE INTENSO (SOLO PERIDURALE CONTINUA)")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDICA ARTO INFERIORE - FEMORE TESSUTI MOLLI COSCIA"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDICA ARTO INFERIORE - FEMORE TESSUTI MOLLI COSCIA")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA ORTOPEDICA ARTO INFERIORE - CHIRURGIA DELLA GAMBA"){
+                }else if(tabToShow.equals("CHIRURGIA ORTOPEDICA ARTO INFERIORE - CHIRURGIA DELLA GAMBA")){
                     //controlla i dati e mostra tabella corrispondente
-                }else if(tabToShow == "CHIRURGIA TORACICA - CHIRURGIA TORACICA"){
+                }else if(tabToShow.equals("CHIRURGIA TORACICA - CHIRURGIA TORACICA")){
                     //controlla i dati e mostra tabella corrispondente
                 }//else if...CONTINUA CON TUTTE LE ALTRE TABELLE (STESSA LISTA DELL'ACTIVITY PRECEDENTE)
             }
