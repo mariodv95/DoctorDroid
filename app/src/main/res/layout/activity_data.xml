@@ -257,35 +257,35 @@
 
                                 <RadioButton
                                     android:id="@+id/radioAsa1"
-                                    android:layout_width="59dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:text="1" />
 
                                 <RadioButton
                                     android:id="@+id/radioAsa2"
-                                    android:layout_width="59dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:text="2" />
 
                                 <RadioButton
                                     android:id="@+id/radioAsa3"
-                                    android:layout_width="59dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:text="3" />
 
                                 <RadioButton
                                     android:id="@+id/radioAsa4"
-                                    android:layout_width="59dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:text="4" />
 
                                 <RadioButton
                                     android:id="@+id/radioAsa5"
-                                    android:layout_width="59dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:text="5" />

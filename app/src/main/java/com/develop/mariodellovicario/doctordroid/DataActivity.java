@@ -85,7 +85,7 @@ public class DataActivity extends AppCompatActivity {
         checkBoxFans = (CheckBox)findViewById(R.id.checkBoxFans);
         checkBoxInsuff = (CheckBox)findViewById(R.id.checkBoxInsuff);
 
-        if (radioButtonMeno65.isChecked()){
+        /*if (radioButtonMeno65.isChecked()){
             etaData = "meno65";
         }else if(radioButtonPiu65.isChecked()){
             etaData = "piu65";
@@ -132,7 +132,7 @@ public class DataActivity extends AppCompatActivity {
             insuff = "insuff";
         }else{
             insuff = "no";
-        }
+        }*/ //IMPLEMENTARE SUCCESSIVAMENTE
 
 
         //BOTTONE PER MOSTRARE TABELLA /////////////////////
