@@ -19,7 +19,8 @@
             <TextView
                 android:id="@+id/classATxt"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="47dp"
+                android:background="@drawable/mybutton2"
                 android:gravity="center_vertical|center_horizontal"
                 android:text="Classe A"
                 android:textSize="24sp"
@@ -63,7 +64,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="69dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton2">
 
                 <TextView
                     android:id="@+id/protocolloA24Txt"
@@ -72,14 +74,15 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="@android:string/paste_as_plain_text"
-                    android:textSize="14sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton"
                 android:orientation="horizontal">
 
                 <TextView
@@ -87,12 +90,15 @@
                     android:layout_width="160dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Somministrazione: " />
+                    android:text="Somministrazione: "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/somministr24txt"
                     android:layout_width="@android:dimen/thumbnail_height"
                     android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
                     android:text="@android:string/paste_as_plain_text"
                     android:textStyle="bold" />
 
@@ -102,20 +108,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton">
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Farmaci:" />
+                    android:text="Farmaci:   "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/farmaci24Txt"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:gravity="left|center_vertical"
                     android:text="@android:string/paste_as_plain_text"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -125,20 +135,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton">
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="54dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Gastroprotettore:" />
+                    android:text="Gastroprotettore:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/gastroTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:gravity="left|center_vertical"
                     android:text="@android:string/paste_as_plain_text"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -157,7 +171,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/mybutton2"
                     android:orientation="horizontal">
 
                     <TextView
@@ -167,14 +182,15 @@
                         android:layout_weight="1"
                         android:gravity="center_vertical|center_horizontal"
                         android:text="@android:string/paste_as_plain_text"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
                     android:orientation="horizontal">
 
                     <TextView
@@ -182,12 +198,15 @@
                         android:layout_width="160dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Somministrazione: " />
+                        android:text="Somministrazione: "
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/somministrSalvtxt"
                         android:layout_width="@android:dimen/thumbnail_height"
                         android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
                         android:text="@android:string/paste_as_plain_text"
                         android:textStyle="bold" />
 
@@ -197,20 +216,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/mybutton">
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Farmaci:" />
+                        android:text="Farmaci:                   "
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
 
                     <TextView
                         android:id="@+id/farmaciSalvTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="left|center_vertical"
                         android:text="@android:string/paste_as_plain_text"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -220,20 +244,24 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/mybutton">
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="54dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Gastroprotettore::" />
+                        android:text="Gastroprotettore:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/gastroSalvTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="left|center_vertical"
                         android:text="@android:string/paste_as_plain_text"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -245,4 +273,5 @@
         </LinearLayout>
 
     </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
