@@ -3,4 +3,5 @@
     <string name="info_button">info_button</string>
     <string name="title_activity_data">DataActivity</string>
     <string name="doctordroid">DoctorDroid</string>
+    <string name="title_activity_class_ctable">ClassCTable</string>
 </resources>
