@@ -274,4 +274,17 @@
 
     </ScrollView>
 
+    <Button
+        android:id="@+id/post24Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="Protocolli dopo 24 ore"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="504dp" />
+
 </android.support.constraint.ConstraintLayout>
