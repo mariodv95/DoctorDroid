@@ -270,21 +270,228 @@
 
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="ADULTO - Protocolli di trattamento del DOLORE LIEVE DOPO 24 ORE"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Da applicare dopo 24 ore dall0'intervento chirurgico"
+                android:textSize="10sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton2">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@android:string/paste_as_plain_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Somministrazione: "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="@android:dimen/thumbnail_height"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@android:string/paste_as_plain_text"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Farmaci:                   "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@android:string/paste_as_plain_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="54dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Gastroprotettore:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@android:string/paste_as_plain_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton2">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@android:string/paste_as_plain_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Somministrazione: "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="@android:dimen/thumbnail_height"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@android:string/paste_as_plain_text"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Farmaci:                   "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@android:string/paste_as_plain_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/mybutton">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="54dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Gastroprotettore:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@android:string/paste_as_plain_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
         </LinearLayout>
+
+
 
     </ScrollView>
 
-    <Button
-        android:id="@+id/post24Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:gravity="center_vertical|center_horizontal|center"
-        android:text="Protocolli dopo 24 ore"
-        android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="504dp" />
+
 
 </android.support.constraint.ConstraintLayout>

@@ -23,7 +23,7 @@ public class ClassATable extends AppCompatActivity {
             eta = extras.getString("eta");
         }
 
-        Button post24 = (Button)findViewById(R.id.post24Btn);
+        
         TextView proto24 = (TextView)findViewById(R.id.protocolloA24Txt);
         TextView somm24 = (TextView)findViewById(R.id.somministr24txt);
         TextView farm24 = (TextView)findViewById(R.id.farmaci24Txt);
@@ -33,7 +33,6 @@ public class ClassATable extends AppCompatActivity {
         TextView farmSalv = (TextView)findViewById(R.id.farmaciSalvTxt);
         TextView gastrSalv = (TextView)findViewById(R.id.gastroSalvTxt);
 
-        //CREARE INTENT PER BOTTONE POST 24 ORE CHE PORTA AD UNA ACTIVITY ANCORA DA CREARE, UGUALE ALLA PRIMA MA CON TEXT EDIT DIVERSE
 
         if(alim.equals("siAlim") && fans.equals("tollerante")){
             proto24.setText("A3 prime 24 ore - il paziente si alimenta");
