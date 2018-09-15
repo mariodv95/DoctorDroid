@@ -60,7 +60,7 @@ public class ClassATable extends AppCompatActivity {
             gastrDp24.setText("No");
             protoSalvDp24.setText("Operazioni terapeutiche di salvataggio da associare alla precedente se NRS > 3");
             sommSalvDp24.setText("os");
-            farmSalvDp24.setText("Tramadolo gtt (100 mg/ml) 50-100 mg (equivalenti a 20-40 gtt) + Metoclopramide 10 mg\nIbuprofene 400-600 mg \nParacetamolo 500 mg + Codeina 30 mg (sospendere terapia con paracetamolo)  1-2 cpr o bustine (max 6 cpr o bustine/die)");
+            farmSalvDp24.setText("Tramadolo gtt (100 mg/ml) 50-100 mg (equivalenti a 20-40 gtt) + Metoclopramide 10 mg\n°Ibuprofene 400-600 mg \n°Paracetamolo 500 mg + Codeina 30 mg (sospendere terapia con paracetamolo)  1-2 cpr o bustine (max 6 cpr o bustine/die)");
             gastrSalvDp24.setText("Pantoprazolo 40 mg/die (solo per Ibuprofene)\n");
 
         }else if( alim.equals("siAlim") && fans.equals("intollerante")){
@@ -81,7 +81,7 @@ public class ClassATable extends AppCompatActivity {
             gastrDp24.setText("No");
             protoSalvDp24.setText("Opzioni terapeutiche di salvataggio da associare alla precedente se NRS >3\n");
             sommSalvDp24.setText("os\n");
-            farmSalvDp24.setText("Tramadolo gtt (100 mg/ml) 50-100 mg (equivalenti a 20-40 gtt) + Metoclopramide 10 mg\nParacetamolo 500 mg + Codeina 30 mg (sospendere terapia con paracetamolo)  1-2 cpr o bustine (max 6 cpr o bustine/die)\n");
+            farmSalvDp24.setText("Tramadolo gtt (100 mg/ml) 50-100 mg (equivalenti a 20-40 gtt) + Metoclopramide 10 mg\n°Paracetamolo 500 mg + Codeina 30 mg (sospendere terapia con paracetamolo)  1-2 cpr o bustine (max 6 cpr o bustine/die)\n");
             gastrSalvDp24.setText("No");
 
         }else if( alim.equals("noAlim") && fans.equals("tollerante")){
@@ -101,7 +101,7 @@ public class ClassATable extends AppCompatActivity {
             gastrDp24.setText("No");
             protoSalvDp24.setText("Opzioni terapeutiche di salvataggio da associare alla precedente se NRS >3\n");
             sommSalvDp24.setText("ev\n");
-            farmSalvDp24.setText("Tramadolo 50-100 mg in Sol.Fis.100 ml in 30’ + Metoclopramide 10 mg\nKetoprofene 160 mg in Sol.Fis.100 ml in 15'\n");
+            farmSalvDp24.setText("Tramadolo 50-100 mg in Sol.Fis.100 ml in 30’ + Metoclopramide 10 mg\n°Ketoprofene 160 mg in Sol.Fis.100 ml in 15'\n");
             gastrSalvDp24.setText("Pantoprazolo 40 mg/die\n (solo per Ketoprofene)");
 
         }else if( alim.equals("noAlim") && fans.equals("tollerante") && eta.equals("piu65")){
@@ -121,7 +121,7 @@ public class ClassATable extends AppCompatActivity {
             gastrDp24.setText("No");
             protoSalvDp24.setText("Opzioni terapeutiche di salvataggio da associare alla precedente se NRS >3\n");
             sommSalvDp24.setText("ev\n");
-            farmSalvDp24.setText("Tramadolo 50-100 mg in Sol.Fis.100 ml in 30’ + Metoclopramide 10 mg\nKetoprofene 160 mg in Sol.Fis.100 ml in 15'\n");
+            farmSalvDp24.setText("°Tramadolo 50-100 mg in Sol.Fis.100 ml in 30’ + Metoclopramide 10 mg\n°Ketoprofene 160 mg in Sol.Fis.100 ml in 15'\n");
             gastrSalvDp24.setText("Pantoprazolo 40 mg/die\n (solo per Ketoprofene)");
 
         }else if( alim.equals("noAlim") && fans.equals("intollerante")){
