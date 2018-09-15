@@ -77,7 +77,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="meno di 65 anni" />
+                            android:text="da 14 a 64 anni" />
 
                         <RadioButton
                             android:id="@+id/radioOver65"
@@ -187,7 +187,7 @@
                         android:layout_height="51dp"
                         android:layout_weight="1"
                         android:paddingLeft="8dp"
-                        android:text="Il paziente è intollerante ai FANS"
+                        android:text="FANS controindicati"
                         android:textColorLink="@color/colorPrimaryDark"
                         android:textSize="18sp"
                         android:textStyle="normal" />
@@ -217,13 +217,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="114dp"
+                android:layout_height="121dp"
                 android:background="@drawable/mybutton"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="103dp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
