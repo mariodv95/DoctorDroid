@@ -151,6 +151,11 @@ public class DataActivity extends AppCompatActivity {
                     startActivity(classAIntent);
                 }else if(tabToShow.equals("CLASSE B")){
                     //controlla i dati e mostra tabella corrispondente
+                    Intent classBIntent = new Intent(DataActivity.this, ClassATable.class);
+                    classBIntent.putExtra("alim", alimData);
+                    classBIntent.putExtra("fans", intollFans);
+                    classBIntent.putExtra("eta", etaData);
+                    startActivity(classBIntent);
                 }else if(tabToShow.equals("CLASSE C")){
                     //controlla i dati e mostra tabella corrispondente
                 }else if(tabToShow.equals("AMPUTAZIONE ARTO INFERIORE")){
