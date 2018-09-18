@@ -151,7 +151,7 @@ public class DataActivity extends AppCompatActivity {
                     startActivity(classAIntent);
                 }else if(tabToShow.equals("CLASSE B")){
                     //controlla i dati e mostra tabella corrispondente
-                    Intent classBIntent = new Intent(DataActivity.this, ClassATable.class);
+                    Intent classBIntent = new Intent(DataActivity.this, ClassBTable.class);
                     classBIntent.putExtra("alim", alimData);
                     classBIntent.putExtra("fans", intollFans);
                     classBIntent.putExtra("eta", etaData);
