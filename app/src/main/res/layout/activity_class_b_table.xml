@@ -66,8 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="La posologia della morfina somministrata in bolo deve essere ridotta del 30% in caso di insufficienza epatica o renale grave, età>65 anni, peso corporeo < 50 Kg, ASA III-IV
-                "
+                android:text="La posologia della morfina somministrata in bolo deve essere ridotta del 30% in caso di insufficienza epatica o renale grave, età superiore ai 65 anni, peso corporeo minore di 50 Kg, ASA III-IV"
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
@@ -731,8 +730,5 @@
     </ScrollView>
 
 
-
-</android.support.constraint.ConstraintLayout>
-    >
 
 </android.support.constraint.ConstraintLayout>
