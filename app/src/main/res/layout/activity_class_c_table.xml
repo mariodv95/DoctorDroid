@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="La posologia della morfina somministrata in bolo deve essere ridotta del 30% in caso di insufficienza epatica o renale grave, età>65 anni, peso corporeo < 50 Kg, ASA III-IV.\nLa dose massima di morfina somministrabile in 1 ora è data dal flusso basale + i boli"
+                android:text="La posologia della morfina somministrata in bolo deve essere ridotta del 30% in caso di insufficienza epatica o renale grave, età superiore a 65 anni, peso corporeo inferiore a 50 Kg, ASA III-IV.\nLa dose massima di morfina somministrabile in 1 ora è data dal flusso basale + i boli"
                 android:textSize="10sp"
                 android:textStyle="bold|italic" />
 
