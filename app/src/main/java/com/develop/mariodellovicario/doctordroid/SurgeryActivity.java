@@ -801,7 +801,7 @@ public class SurgeryActivity extends AppCompatActivity {
         InterventiGen.add("Orchiectomia ");
         InterventiGen.add("Pancreasectomia ");
         InterventiGen.add("Parotidectomia ");
-        InterventiGen.add("Parto cesareo (stark)");
+        InterventiGen.add("Parto cesareo"); //era "Parto cesareo (stark)"
         InterventiGen.add("PCNL (nefrolitotrissia percutanea)");
         InterventiGen.add("Peniectomia ");
         InterventiGen.add("Plastica del giunto pielo ureterale");
