@@ -21,7 +21,8 @@
             android:label="@string/title_activity_data"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ClassATable" />
-        <activity android:name=".ClassBTable"></activity>
+        <activity android:name=".ClassBTable" />
+        <activity android:name=".ClassCTable"></activity>
     </application>
 
 </manifest>

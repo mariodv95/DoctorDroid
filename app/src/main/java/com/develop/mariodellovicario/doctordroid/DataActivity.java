@@ -158,6 +158,11 @@ public class DataActivity extends AppCompatActivity {
                     startActivity(classBIntent);
                 }else if(tabToShow.equals("CLASSE C")){
                     //controlla i dati e mostra tabella corrispondente
+                    Intent classCIntent = new Intent(DataActivity.this, ClassBTable.class);
+                    classCIntent.putExtra("alim", alimData);
+                    classCIntent.putExtra("fans", intollFans);
+                    classCIntent.putExtra("eta", etaData);
+                    startActivity(classCIntent);
                 }else if(tabToShow.equals("AMPUTAZIONE ARTO INFERIORE")){
                     //controlla i dati e mostra tabella corrispondente
                 }else if(tabToShow.equals("CHIRURGIA ADDOMINALE DOLORE INTENSO")){
