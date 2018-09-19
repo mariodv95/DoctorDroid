@@ -223,7 +223,7 @@ public class DataActivity extends AppCompatActivity {
                     //controlla i dati e mostra tabella corrispondente
                 }else if(tabToShow.equals("CHIRURGIA TORACICA - CHIRURGIA TORACICA")){
                     //controlla i dati e mostra tabella corrispondente
-                }//else if...CONTINUA CON TUTTE LE ALTRE TABELLE (STESSA LISTA DELL'ACTIVITY PRECEDENTE) //MESSE TUTTE, controlla ma credo ok
+                }//else if...CONTINUA CON TUTTE LE ALTRE TABELLE (STESSA LISTA DELL'ACTIVITY PRECEDENTE) //MESSE TUTTE, controlla ma credo okk
             }
         });
 
