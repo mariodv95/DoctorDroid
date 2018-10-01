@@ -22,7 +22,7 @@
                 android:layout_height="47dp"
                 android:background="@drawable/mybutton2"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="Classe C"
+                android:text="Dolore Intenso"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
