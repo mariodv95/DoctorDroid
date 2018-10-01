@@ -77,7 +77,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="da 14 a 64 anni" />
+                            android:text="da 16 a 64 anni" />
 
                         <RadioButton
                             android:id="@+id/radioOver65"
@@ -155,18 +155,18 @@
                         android:layout_weight="1">
 
                         <RadioButton
-                            android:id="@+id/radioSiAlim"
-                            android:layout_width="match_parent"
-                            android:layout_height="42dp"
-                            android:layout_weight="1"
-                            android:text="il paziente si alimenta" />
-
-                        <RadioButton
                             android:id="@+id/radioNoAlim"
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:layout_weight="1"
                             android:text="il paziente non si alimenta" />
+
+                        <RadioButton
+                            android:id="@+id/radioSiAlim"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_weight="1"
+                            android:text="il paziente si alimenta" />
 
                     </RadioGroup>
 
