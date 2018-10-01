@@ -22,7 +22,7 @@ public class ClassCTable extends AppCompatActivity {
             eta = extras.getString("eta");
         }
 
-        TextView proto24 = (TextView)findViewById(R.id.protocolloA24Txt);
+        TextView proto24 = (TextView)findViewById(R.id.protocolloC24Txt);
 
         TextView somm241 = (TextView)findViewById(R.id.somministr24txt1);
         TextView farm241 = (TextView)findViewById(R.id.farmaci24Txt1);
@@ -44,12 +44,12 @@ public class ClassCTable extends AppCompatActivity {
         TextView farm245 = (TextView)findViewById(R.id.farmaci24Txt5);
         TextView gastr245 = (TextView)findViewById(R.id.gastroTxt5);
 
-        TextView protSalv = (TextView)findViewById(R.id.protocolloASalvTxt);
+        TextView protSalv = (TextView)findViewById(R.id.protocolloCSalvTxt);
         TextView sommSalv = (TextView)findViewById(R.id.somministrSalvtxt);
         TextView farmSalv = (TextView)findViewById(R.id.farmaciSalvTxt);
         TextView gastrSalv = (TextView)findViewById(R.id.gastroSalvTxt);
 
-        TextView protoDp24 = (TextView)findViewById((R.id.ProtocolloDp24Txt));
+        TextView protoDp24 = (TextView)findViewById((R.id.ProtocolloCDp24Txt));
         TextView sommDp24 = (TextView)findViewById((R.id.somministrDp24Txt));
         TextView farmDp24 = (TextView)findViewById((R.id.farmaciDp24Txt));
         TextView gastrDp24 = (TextView)findViewById((R.id.gastroDp24Txt));
@@ -60,7 +60,7 @@ public class ClassCTable extends AppCompatActivity {
 
         if(alim.equals("noAlim") && fans.equals("tollerante")){
             //PRIME 24 ORE
-            proto24.setText("C1 prime 24 ore - il paziente non si alimenta");
+            proto24.setText("C1 prime 24 ore - il paziente non si alimenta\n");
 
             somm241.setText("ev bolo 30 min prima della fine dell'intervento chirurgico\n");
             farm241.setText("Morfina 0,10-0,15 mg/Kg + Paracetamolo 1 g + Ketorolac 30 mg + Ondansetron 4 mg\n");
@@ -125,7 +125,7 @@ public class ClassCTable extends AppCompatActivity {
             farmSalv.setText("Morfina 0,05-0,10 mg/Kg in boli refratti ogni 5-10 min fino a NRS<4\n");
             gastrSalv.setText("No");
             //DOPO 24 ORE
-            protoDp24.setText("C1 dopo 24 ore - il paziente non si alimenta");
+            protoDp24.setText("C1 dopo 24 ore - il paziente non si alimenta\n");
             sommDp24.setText("ev");
             farmDp24.setText("Paracetamolo  1.000 mg in 15’ ogni 8h\n");
             gastrDp24.setText("No");
@@ -134,6 +134,6 @@ public class ClassCTable extends AppCompatActivity {
             farmSalvDp24.setText("°Se NRS tra 4 e 6: Tramadolo 100 mg in Sol.Fis.100 ml  ripetibile ogni 8h (ogni 12/h se > 65 anni) + Metoclopramide 10 mg\n°Se NRS > 6: Morfina 0,05-0,10 mg/Kg + Ondansetron 4 mg\n");
             gastrSalvDp24.setText("Pantoprazolo 40 mg/die\n (SOLO per NRS tra 4 e 6)");
 
-        }//QUI VANNO GLI ALTRI CASI CHE PERò NON CAPISCO COME INSERIRE////INOLTRE HO SCRITTO LE STESSE COSE ELIMINANDO IL KETOROLAC SIA DALLE PRIME CHE DOPO 24 ORE
+        }//IL PAZIENTE SI ALIMENTA + IL PAZIENTE SI ALIMENTA E FANS CONTROINDICATI -> SOLO IN 24ORE SUCCESSIVE
     }
 }
